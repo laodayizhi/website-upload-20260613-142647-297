@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影片-热播日韩剧</title>
+  <meta name="description" content="搜索日韩及热门电影、剧集、动画、纪录片，快速进入影片详情与在线播放页面。">
+  <meta name="keywords" content="日韩,免费高清视频,在线观看,热播电影,剧集,资源丰富,播放稳定,影视站,搜索,在线搜索">
+  <link rel="stylesheet" href="assets/original.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html" aria-label="热播日韩剧">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </span>
+        <span>热播日韩剧</span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link " href="index.html">首页</a>
+        <a class="nav-link " href="categories.html">分类浏览</a>
+        <a class="nav-link " href="ranking.html">排行榜</a>
+        <a class="nav-link is-active" href="search.html">搜索</a>
+      </nav>
+      <form class="site-search" action="search.html" method="get">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input class="search-input" type="search" name="q" placeholder="搜索日韩影视..." autocomplete="off">
+      </form>
+      <button class="mobile-toggle" type="button" aria-label="展开导航" data-mobile-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav aria-label="移动导航">
+        <a class="mobile-link " href="index.html">首页</a>
+        <a class="mobile-link " href="categories.html">分类浏览</a>
+        <a class="mobile-link " href="ranking.html">排行榜</a>
+        <a class="mobile-link is-active" href="search.html">搜索</a>
+      <form class="mobile-search site-search" action="search.html" method="get">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input class="search-input" type="search" name="q" placeholder="搜索日韩影视..." autocomplete="off">
+      </form>
+    </nav>
+  </header>
+  <main class="main-wrap" data-search-page>
+    <section class="page-title">
+      <p class="eyebrow">Search</p>
+      <h1>搜索影片</h1>
+      <p>输入影片标题、地区、年份、类型或标签，快速定位对应详情页。</p>
+    </section>
+    <section class="search-page-box">
+      <form action="search.html" method="get">
+        <input data-search-input type="search" name="q" placeholder="输入片名、地区、类型或年份" autocomplete="off">
+        <button class="filter-button" type="submit">搜索</button>
+      </form>
+    </section>
+    <section class="search-results" data-search-results></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section class="footer-brand">
+        <a class="site-logo footer-logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" focusable="false">
+            <path d="M8 5v14l11-7z"></path>
+          </svg>
+        </span>
+          <span>热播日韩剧</span>
+        </a>
+        <p>专注于日韩地区最新热播电影与电视剧集，提供免费高清视频在线观看，资源丰富，播放稳定，是影视爱好者的优选站点。</p>
+      </section>
+      <section>
+        <h2>快速导航</h2>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="categories.html">分类浏览</a></li>
+          <li><a href="ranking.html">排行榜</a></li>
+          <li><a href="search.html">搜索影片</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>热门分类</h2>
+        <ul>
+          <li><a href="category/hot-picks.html">热播精选</a></li>
+          <li><a href="category/cinema-plus.html">高清电影</a></li>
+          <li><a href="category/series-watch.html">人气剧集</a></li>
+          <li><a href="category/action-suspense.html">动作悬疑</a></li>
+          <li><a href="category/love-drama.html">爱情剧情</a></li>
+          <li><a href="category/comedy-family.html">喜剧家庭</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">© 热播日韩剧 · 高清影视在线观看</div>
+  </footer>
+  <script src="assets/search-index.js"></script>
+  <script src="assets/site.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

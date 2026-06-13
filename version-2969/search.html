@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>影片搜索 - 欧美精品影视</title>
+    <meta name="description" content="欧美精品视频搜索页，可按片名、类型、地区、年份和标签快速筛选免费视频观看内容。">
+    <meta name="keywords" content="欧美精品视频,视频汇总,免费视频,影视资源,在线观看,高清视频,欧美影视,精品内容,免费影视,视频推荐,海量资源,轻松找片">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="top-nav container" aria-label="主导航">
+            <a class="brand" href="./index.html" aria-label="欧美精品影视">
+                <span class="brand-icon">▶</span>
+                <span>欧美精品影视</span>
+            </a>
+            <div class="nav-links">
+                    <a href="./index.html">首页</a>
+                    <a href="./categories.html">分类</a>
+                    <a href="./ranking.html">热播榜</a>
+                    <a href="./search.html">搜索</a>
+            </div>
+            <form class="nav-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索电影..." aria-label="搜索电影">
+                <button type="submit">搜索</button>
+            </form>
+            <button class="menu-button" type="button" aria-label="菜单" data-menu-button>☰</button>
+        </nav>
+        <div class="mobile-panel" data-mobile-panel>
+            <form class="mobile-search" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索电影..." aria-label="搜索电影">
+                <button type="submit">搜索</button>
+            </form>
+            <div class="mobile-links">
+                    <a href="./index.html">首页</a>
+                    <a href="./categories.html">分类</a>
+                    <a href="./ranking.html">热播榜</a>
+                    <a href="./search.html">搜索</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">搜索筛选</span>
+                <h1>搜索你喜欢的影片</h1>
+                <p>可按片名、地区、类型、年份、标签和分类筛选。</p>
+            </div>
+        </section>
+        <section class="container section-block">
+            <div class="search-box-panel">
+                <input type="search" id="searchInput" placeholder="输入片名、地区、类型或标签" aria-label="搜索关键词">
+                <select id="categoryFilter" aria-label="分类筛选">
+                    <option value="">全部分类</option>
+                    <option value="精选视频">精选视频</option>
+                    <option value="热门电影">热门电影</option>
+                    <option value="高清剧集">高清剧集</option>
+                    <option value="年度新片">年度新片</option>
+                    <option value="喜剧专区">喜剧专区</option>
+                    <option value="惊悚悬疑">惊悚悬疑</option>
+                    <option value="动画家庭">动画家庭</option>
+                    <option value="动作冒险">动作冒险</option>
+                    <option value="剧情爱情">剧情爱情</option>
+                    <option value="科幻奇幻">科幻奇幻</option>
+                </select>
+                <select id="yearFilter" aria-label="年份筛选">
+                    <option value="">全部年份</option>
+                </select>
+                <button type="button" id="clearSearch">重置</button>
+            </div>
+            <div class="movie-grid" id="searchResults">
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1143.html">
+                        <img src="./93.jpg" alt="血的圣宴" loading="lazy">
+                        <span class="duration">117:14</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1143.html">血的圣宴</a>
+                        <div class="movie-meta">
+                            <span>2016</span>
+                            <span>西班牙</span>
+                            <span>电影</span>
+                        </div>
+                        <p>七位互不相识的陌生人受邀参加一场豪华晚宴，发现每道菜都是用活人的鲜血烹饪的。</p>
+                        <div class="tag-list"><span>邪教</span><span>宗教</span><span>密室</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1668.html">
+                        <img src="./18.jpg" alt="没有人强迫你爱你" loading="lazy">
+                        <span class="duration">99:04</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1668.html">没有人强迫你爱你</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>中国大陆</span>
+                            <span>电视剧</span>
+                        </div>
+                        <p>全职太太发现丈夫的“爱”是一场精心设计的服从性测试，她决定用离婚来证明自己值得被爱。</p>
+                        <div class="tag-list"><span>婚姻</span><span>自我救赎</span><span>女性成长</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1868.html">
+                        <img src="./68.jpg" alt="朋友永远是朋" loading="lazy">
+                        <span class="duration">139:15</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1868.html">朋友永远是朋</a>
+                        <div class="movie-meta">
+                            <span>2026</span>
+                            <span>中国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>四个老友在深山木屋度假，其中一人醒来发现被杀，而凶手就在他们中间。</p>
+                        <div class="tag-list"><span>友情</span><span>背叛</span><span>记忆</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-836.html">
+                        <img src="./86.jpg" alt="我喜欢的东西，讨厌的东西" loading="lazy">
+                        <span class="duration">91:47</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-836.html">我喜欢的东西，讨厌的东西</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>日本</span>
+                            <span>电视剧</span>
+                        </div>
+                        <p>两个性格完全相反的室友，各自写下“喜欢与讨厌的100件事”，在交换清单后发现彼此竟是绝配。</p>
+                        <div class="tag-list"><span>治愈</span><span>反差萌</span><span>同居</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-526.html">
+                        <img src="./76.jpg" alt="理性和感性" loading="lazy">
+                        <span class="duration">117:15</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-526.html">理性和感性</a>
+                        <div class="movie-meta">
+                            <span>2027</span>
+                            <span>英国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>将简·奥斯汀的经典故事置于现代伦敦金融城，理智的姐姐是投行精英，感性的妹妹是街头艺人。</p>
+                        <div class="tag-list"><span>经典改编</span><span>现代设定</span><span>姐妹</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-599.html">
+                        <img src="./149.jpg" alt="天堂岛之外第三季" loading="lazy">
+                        <span class="duration">155:08</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-599.html">天堂岛之外第三季</a>
+                        <div class="movie-meta">
+                            <span>2026</span>
+                            <span>英国</span>
+                            <span>电视剧</span>
+                        </div>
+                        <p>老警探调离后，天堂岛迎来一位有黑暗过往的新任督察，而第一起命案就与他的秘密有关。</p>
+                        <div class="tag-list"><span>孤岛凶案</span><span>双线叙事</span><span>新角色登场</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-159.html">
+                        <img src="./9.jpg" alt="欢乐一家亲第三季" loading="lazy">
+                        <span class="duration">154:06</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-159.html">欢乐一家亲第三季</a>
+                        <div class="movie-meta">
+                            <span>2024</span>
+                            <span>美国</span>
+                            <span>剧集</span>
+                        </div>
+                        <p>弗雷泽回到波士顿，发现父亲的老公寓里住进了一个比他更毒舌的AI心理医生。</p>
+                        <div class="tag-list"><span>多镜头喜剧</span><span>心理医生</span><span>父子</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1926.html">
+                        <img src="./126.jpg" alt="虎将征西" loading="lazy">
+                        <span class="duration">114:05</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1926.html">虎将征西</a>
+                        <div class="movie-meta">
+                            <span>2024</span>
+                            <span>中国大陆</span>
+                            <span>电影</span>
+                        </div>
+                        <p>唐代安西都护府最后一位虎将，率三千残兵对抗十万敌军。</p>
+                        <div class="tag-list"><span>古装</span><span>将军</span><span>西域</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-412.html">
+                        <img src="./112.jpg" alt="失身不离三兄弟" loading="lazy">
+                        <span class="duration">96:18</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-412.html">失身不离三兄弟</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>泰国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>三兄弟发誓要在同一天完成成人礼，却在各自行动中全部搞砸，最后阴差阳错地帮彼此圆了场。</p>
+                        <div class="tag-list"><span>泰国青春片</span><span>兄弟情</span><span>荒诞一夜</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-235.html">
+                        <img src="./85.jpg" alt="长岛凶宅故事" loading="lazy">
+                        <span class="duration">123:28</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-235.html">长岛凶宅故事</a>
+                        <div class="movie-meta">
+                            <span>2018</span>
+                            <span>美国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>一家四口搬进长岛低价凶宅，录下了所有灵异现象，最后发现鬼是假的，但房子真的是凶宅。</p>
+                        <div class="tag-list"><span>伪纪录片</span><span>凶宅交易</span><span>房地产骗局</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-511.html">
+                        <img src="./61.jpg" alt="团结才能踢3" loading="lazy">
+                        <span class="duration">118:00</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-511.html">团结才能踢3</a>
+                        <div class="movie-meta">
+                            <span>2022</span>
+                            <span>韩国</span>
+                            <span>综艺</span>
+                        </div>
+                        <p>一群运动神经为负的韩国明星再次集结，这次他们要挑战韩国传奇球星组成的梦之队。</p>
+                        <div class="tag-list"><span>足球综艺</span><span>明星球队</span><span>热血搞笑</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-933.html">
+                        <img src="./33.jpg" alt="93航班" loading="lazy">
+                        <span class="duration">117:03</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-933.html">93航班</a>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>美国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>以实时叙事还原911事件中被劫持的93号航班上，乘客与劫机者长达40分钟的殊死搏斗。</p>
+                        <div class="tag-list"><span>911事件</span><span>真实改编</span><span>群像戏</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-522.html">
+                        <img src="./72.jpg" alt="输赢" loading="lazy">
+                        <span class="duration">99:46</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-522.html">输赢</a>
+                        <div class="movie-meta">
+                            <span>2024</span>
+                            <span>中国大陆</span>
+                            <span>电影</span>
+                        </div>
+                        <p>前电竞冠军父亲为了阻止儿子打职业，亲自复出组队，打算在比赛中亲手淘汰儿子，结果第一场就输了。</p>
+                        <div class="tag-list"><span>电竞</span><span>父子情</span><span>代际冲突</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-646.html">
+                        <img src="./46.jpg" alt="冤家成伉俪" loading="lazy">
+                        <span class="duration">95:58</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-646.html">冤家成伉俪</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>英国</span>
+                            <span>剧集</span>
+                        </div>
+                        <p>一对离异五年的律师夫妻，在一桩离婚官司中分别代理了原告和被告，于是法庭成了他们延迟五年的第二次恋爱战场。</p>
+                        <div class="tag-list"><span>英式幽默</span><span>婚姻</span><span>斗嘴</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-287.html">
+                        <img src="./137.jpg" alt="国手良医" loading="lazy">
+                        <span class="duration">117:02</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-287.html">国手良医</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>中国</span>
+                            <span>电视剧</span>
+                        </div>
+                        <p>一个能“看见”经络的天才少年，用失传针法挑战现代医学的不治之症。</p>
+                        <div class="tag-list"><span>中医传承</span><span>天才医生</span><span>医患故事</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1347.html">
+                        <img src="./147.jpg" alt="别叫我酒神2" loading="lazy">
+                        <span class="duration">100:30</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1347.html">别叫我酒神2</a>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>中国大陆</span>
+                            <span>电影</span>
+                        </div>
+                        <p>曾经的酒神为救女儿远赴海外，却因不会喝酒而在欧洲酒庄里闹出一连串乌龙。</p>
+                        <div class="tag-list"><span>续集</span><span>东北喜剧</span><span>戒酒</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1318.html">
+                        <img src="./118.jpg" alt="最后的嬉皮" loading="lazy">
+                        <span class="duration">120:00</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1318.html">最后的嬉皮</a>
+                        <div class="movie-meta">
+                            <span>2022</span>
+                            <span>中国台湾</span>
+                            <span>电影</span>
+                        </div>
+                        <p>患上失智症的老嬉皮忘记了所有家人，却只记得五十年前伍德斯托克音乐节上的一段旋律。</p>
+                        <div class="tag-list"><span>阿尔茨海默症</span><span>迷幻摇滚</span><span>父子和解</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-130.html">
+                        <img src="./130.jpg" alt="你是我的毒玫瑰" loading="lazy">
+                        <span class="duration">104:19</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-130.html">你是我的毒玫瑰</a>
+                        <div class="movie-meta">
+                            <span>2023</span>
+                            <span>泰国</span>
+                            <span>剧集</span>
+                        </div>
+                        <p>毒舌律师每次过敏都只能被天才皮肤科医生治好，而医生唯一的副作用是——他控制不住想咬对方。</p>
+                        <div class="tag-list"><span>欢喜冤家</span><span>契约恋爱</span><span>医生律师</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1304.html">
+                        <img src="./104.jpg" alt="秘窗" loading="lazy">
+                        <span class="duration">102:39</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1304.html">秘窗</a>
+                        <div class="movie-meta">
+                            <span>2004</span>
+                            <span>美国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>作家在湖边小屋被人指控抄袭，对方说：如果你不改结尾，我就替你改写你的人生。</p>
+                        <div class="tag-list"><span>斯蒂芬·金</span><span>人格分裂</span><span>作家</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-583.html">
+                        <img src="./133.jpg" alt="东海人鱼传2" loading="lazy">
+                        <span class="duration">144:57</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-583.html">东海人鱼传2</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>中国大陆</span>
+                            <span>电影</span>
+                        </div>
+                        <p>第一季幸存的情侣再度踏上冒险，这次他们必须在深海帝国与陆地王朝的战争中，拯救沦为政治筹码的人鱼公主。</p>
+                        <div class="tag-list"><span>深海秘境</span><span>鲛人泪</span><span>王朝斗争</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-164.html">
+                        <img src="./14.jpg" alt="关于莉莉周的一切" loading="lazy">
+                        <span class="duration">114:51</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-164.html">关于莉莉周的一切</a>
+                        <div class="movie-meta">
+                            <span>2025</span>
+                            <span>日本</span>
+                            <span>电影</span>
+                        </div>
+                        <p>当全民偶像莉莉周突然人间蒸发，她的每个粉丝都开始离奇消失。</p>
+                        <div class="tag-list"><span>偶像</span><span>网络暴力</span><span>校园</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-446.html">
+                        <img src="./146.jpg" alt="山羊的故事" loading="lazy">
+                        <span class="duration">129:20</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-446.html">山羊的故事</a>
+                        <div class="movie-meta">
+                            <span>2024</span>
+                            <span>土耳其 / 法国</span>
+                            <span>电影</span>
+                        </div>
+                        <p>父亲临终前把一千只山羊留给儿子，条件是必须赶着羊群走过即将建大坝的河谷。</p>
+                        <div class="tag-list"><span>安纳托利亚</span><span>牧羊人</span><span>父子和解</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1561.html">
+                        <img src="./61.jpg" alt="焕羽" loading="lazy">
+                        <span class="duration">133:54</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1561.html">焕羽</a>
+                        <div class="movie-meta">
+                            <span>2026</span>
+                            <span>中国</span>
+                            <span>电视剧</span>
+                        </div>
+                        <p>体校生捡到一根能让人短暂飞翔的羽毛，却因此卷入了一场横跨五百年的神鸟守护之战。</p>
+                        <div class="tag-list"><span>羽毛</span><span>转世</span><span>校园</span></div>
+                    </div>
+                </article>
+                <article class="movie-card">
+                    <a class="poster" href="./movie/movie-1946.html">
+                        <img src="./146.jpg" alt="火星时代 第一季" loading="lazy">
+                        <span class="duration">135:24</span>
+                        <span class="poster-play">▶</span>
+                    </a>
+                    <div class="movie-card-body">
+                        <a class="movie-title" href="./movie/movie-1946.html">火星时代 第一季</a>
+                        <div class="movie-meta">
+                            <span>2016</span>
+                            <span>美国</span>
+                            <span>剧集</span>
+                        </div>
+                        <p>虚实结合的叙事，一边是当今科学家访谈，一边是2033年首批火星殖民者面临生死存亡的震撼戏剧。</p>
+                        <div class="tag-list"><span>太空探索</span><span>殖民</span><span>虚构纪录片</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="assets/search-data.js"></script>
+    <script src="assets/search.js"></script>
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>欧美精品影视</strong>
+                <p>欧美精品视频汇总 - 海量免费视频影视，轻松找到你喜欢的影片。高清画质，流畅播放，精彩内容一网打尽。</p>
+            </div>
+            <div class="footer-links">
+                <a href="./category/premium-video.html">精选视频</a> <a href="./category/hot-movies.html">热门电影</a> <a href="./category/hd-series.html">高清剧集</a> <a href="./category/new-release.html">年度新片</a> <a href="./category/comedy-zone.html">喜剧专区</a> <a href="./category/thriller-mystery.html">惊悚悬疑</a>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" type="button" data-back-top aria-label="返回顶部">↑</button>
+    <script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
